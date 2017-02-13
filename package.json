@@ -7,11 +7,16 @@
     "start": "cd ./app && yarn start",
     "build": "cd ./app && npm run build",
     "electron:prod": "npm run build && NODE_ENV=production electron .",
-    "electron:dev": "npm start & electron ."
+    "electron:dev": "npm start & electron .",
+    "getstorybook": "cd ./app && getstorybook --use-npm",
+    "storybook": "cd ./app && npm run storybook"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "^1.4.15"
+  },
+  "dependencies": {
+    "getstorybook": "^1.7.0"
   }
 }
