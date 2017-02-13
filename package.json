@@ -9,7 +9,8 @@
     "electron:prod": "npm run build && NODE_ENV=production electron .",
     "electron:dev": "npm start & electron .",
     "getstorybook": "cd ./app && getstorybook --use-npm",
-    "storybook": "cd ./app && npm run storybook"
+    "storybook": "cd ./app && npm run storybook",
+    "postinstall": "cd ./app && npm install"
   },
   "author": "",
   "license": "ISC",
