@@ -1,0 +1,17 @@
+{
+  "name": "actualizame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "electron.js",
+  "scripts": {
+    "start": "cd ./app && yarn start",
+    "build": "cd ./app && npm run build",
+    "electron:prod": "npm run build && NODE_ENV=production electron .",
+    "electron:dev": "npm start & electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.4.15"
+  }
+}
