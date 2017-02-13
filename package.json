@@ -4,10 +4,9 @@
   "description": "",
   "main": "electron.js",
   "scripts": {
-    "start": "cd ./app && yarn start",
+    "start": "electron . & cd ./app && npm start",
     "build": "cd ./app && npm run build",
     "electron:prod": "npm run build && NODE_ENV=production electron .",
-    "electron:dev": "npm start & electron .",
     "getstorybook": "cd ./app && getstorybook --use-npm",
     "storybook": "cd ./app && npm run storybook",
     "postinstall": "cd ./app && npm install"
