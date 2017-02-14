@@ -1,5 +1,5 @@
 {
-  "name": "actualizame",
+  "name": "create-electroreact-app",
   "version": "1.0.0",
   "description": "",
   "main": "electron.js",
@@ -12,7 +12,11 @@
     "postinstall": "cd ./app && npm install",
     "styles": "node-sass -w --output-style=expanded stylesheets/ -o ./"
   },
-  "author": "",
+  "author": {
+    "name": "Santiago Camelo",
+    "email": "trikanna@gmail.com",
+    "url": "http://www.trikanna.com/"
+  },
   "license": "ISC",
   "devDependencies": {
     "electron": "^1.4.15",
