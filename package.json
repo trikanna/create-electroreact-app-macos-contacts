@@ -4,17 +4,19 @@
   "description": "",
   "main": "electron.js",
   "scripts": {
-    "start": "electron . & cd ./app && npm start",
+    "start": "electron . & npm run styles & cd ./app && npm start",
     "build": "cd ./app && npm run build",
     "electron:prod": "npm run build && NODE_ENV=production electron .",
     "getstorybook": "cd ./app && getstorybook --use-npm",
     "storybook": "cd ./app && npm run storybook",
-    "postinstall": "cd ./app && npm install"
+    "postinstall": "cd ./app && npm install",
+    "styles": "node-sass -w --output-style=expanded stylesheets/ -o ./"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "^1.4.15",
-    "getstorybook": "^1.7.0"
+    "getstorybook": "^1.7.0",
+    "node-sass": "^4.5.0"
   }
 }
