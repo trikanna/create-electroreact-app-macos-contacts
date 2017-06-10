@@ -1,3 +1,5 @@
+/// <reference path="./typings/index.d.ts" />
+
 const electron = require('electron')
 // Module to control application life.
 const app = electron.app
@@ -14,9 +16,12 @@ let mainWindow
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
+    width: 900,
     height: 600,
     show: false,
+    titleBarStyle: 'hidden',
+    vibrancy: 'light',
+    backgroundColor: '#10FFFFFF',
     webPreferences: {
       webgl: false
     }
@@ -25,8 +30,10 @@ function createWindow() {
   if (process.env.NODE_ENV !== 'production') {
     mainWindow.loadURL('http://127.0.0.1:3000');
 
+    // BrowserWindow.addDevToolsExtension('/Users/trikanna/Library/Application\ Support/Google/Chrome/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi/0.15.7_0/');
+
     // Open the DevTools.
-    mainWindow.webContents.openDevTools()
+    // mainWindow.webContents.openDevTools()
 
   } else {
     mainWindow.loadURL(url.format({

@@ -1,8 +1,47 @@
+html,
 body {
-  margin: 0;
-  padding: 0;
-  font: menu;
-  font-size: 12px;
-  line-height: 1.4;
-  background: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-app-region: drag;
+}
+
+body {
+    font: menu;
+    font-size: 12px;
+    line-height: 1.4;
+    text-rendering: geometricPrecision;
+    #root {
+        height: 100%;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 20px 0;
+}
+
+a {
+  cursor: default;
+
+  &.link {
+    cursor: pointer;
+  }
+}
+
+@import "colors";
+@import "layout";
+@import "sidebar";
+@import "contacts_list";
+
+
+.hidden {
+  display: none;
 }

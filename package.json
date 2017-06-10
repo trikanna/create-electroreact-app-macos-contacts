@@ -1,5 +1,5 @@
 {
-  "name": "create-electroreact-app",
+  "name": "create-electroreact-app-macos-contacts",
   "version": "1.0.0",
   "description": "",
   "main": "electron.js",
@@ -10,7 +10,8 @@
     "getstorybook": "cd ./app && getstorybook --use-npm",
     "storybook": "cd ./app && npm run storybook",
     "postinstall": "cd ./app && npm install",
-    "styles": "node-sass -w --output-style=expanded stylesheets/ -o ./"
+    "styles": "node-sass -w --output-style=expanded stylesheets/ -o ./",
+    "types": "typings install"
   },
   "author": {
     "name": "Santiago Camelo",
@@ -19,8 +20,9 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "electron": "^1.4.15",
+    "electron": "^1.6.10",
     "getstorybook": "^1.7.0",
-    "node-sass": "^4.5.0"
+    "node-sass": "^4.5.0",
+    "typings": "^2.1.0"
   }
 }

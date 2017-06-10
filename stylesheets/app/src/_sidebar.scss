@@ -1,0 +1,64 @@
+@import "colors";
+
+$width_sidebar: 151px;
+$width_contacts_list: 240px;
+
+.sidebar {
+  width: 151px;
+  float: left;
+  height: 100%;
+  padding-top: 26px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: transparent;
+  box-sizing: border-box;
+
+  &__title {
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 19px;
+    margin-bottom: 11px;
+  }
+
+  &__group {
+    padding: 0px 0 8px 0;
+
+    &__header {
+      color: #777;
+      padding: 0 9px;
+      font-size: 11px;
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        height: 24px;
+        padding: 0 9px 0 19px;
+
+        &.active {
+          background: lighten($blue_medium, 5%);
+
+          a {
+            color: white;
+            font-weight: 400;
+          }
+        }
+
+        a {
+          height: 23px;
+          line-height: 25px;
+          display: block;
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 12.7px;
+          color: $black;
+        }
+      }
+    }
+  }
+}
