@@ -30,7 +30,7 @@ function createWindow() {
   if (process.env.NODE_ENV !== 'production') {
     mainWindow.loadURL('http://127.0.0.1:3000');
 
-    BrowserWindow.addDevToolsExtension('/Users/trikanna/Library/Application\ Support/Google/Chrome/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi/0.15.7_0/');
+    // BrowserWindow.addDevToolsExtension('/Users/trikanna/Library/Application\ Support/Google/Chrome/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi/0.15.7_0/');
 
     // Open the DevTools.
     // mainWindow.webContents.openDevTools()
